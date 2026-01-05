@@ -4,43 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitha Ghor </title>
+    <style>
+        form .basic-info label{
+            display: block;
+            margin-top: 20px;
+
+        }
+    </style>
 </head>
-<body>
-    <header>
+     <body>
+     <header>
 
 
 
-    </header>
-    <main>
+     </header>
+     <main>
         <section>
             <h2>
                 jamal mother Pitha Ghar
 
                 
-            </h2>
-            <form action="">
-                <label for="name">Your name:</label>
+              </h2>
+              <form action="">
+              <fieldset class="basic-info">
+                <legend>
+                    Basic Information:
+                </legend>
+                  <label for="name">Your name:</label>
                 <input type="text" name="name" id="name">
+                <br> <br>
 
 
                 <label for="email">Your email:</label>
                 <input type="email" name="email" id="email">
+                
 
                 <label for="phone"> Phone number :</label>
+              </fieldset>
 
                 <fieldset>
-                    <legend> 
+                    <legend > 
                         <!-- this legend tag in html is generally used as a title tag in html  -->
                         Pitha Info
                     </legend>
                     <label for="chitoy">Chitoi Pitha </label>
                     <input type="radio" name="chitoy" id="chitoy">
-                
-                </fieldset>
-            </form>
+                    <label for="chitoy">Vapa</label>
+                    <input type="radio" name="chitoy" id="vapa">
 
-        </section>
-    </main>
+                    <!-- if i set the name same for the three labels and input types then i can select only one type of food  -->
+                     
+
+
+              
+                
+                  </fieldset>
+                  <fieldset>
+                        <legend>vorta selection</legend>
+                       <label for="sorisa"> sorisa </label> 
+                       <input type="checkbox" name="vorta" id="sorisa">
+                       <label for="morich"> morich</label>
+                       <input type="checkbox" name="vorta" id="shutki">
+
+                     </fieldset>
+                     <fieldset>
+                        <legend>
+                            Extra information:
+                        </legend>
+                        <textarea cols="50" rows="4" name="" id=""></textarea>
+
+                     </fieldset>
+                     <input type="submit" value="Submit">
+                     <input type="reset" value="clear">
+                  </form>
+
+                  </section>
+                  </main>
     
-</body>
+       </body>
 </html>
